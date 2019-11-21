@@ -8,7 +8,7 @@ class Renderer:
         self.height = height
         self.screen = pygame.display.set_mode((self.width, self.height))
 
-    def clear_screen(self, r, g, b):
+    def clear_screen(self, r=0, g=0, b=0):
         background = pygame.Surface(self.screen.get_size())
         background = background.convert()
         background.fill((r, g, b))
